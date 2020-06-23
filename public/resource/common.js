@@ -16,6 +16,10 @@ function MobileSideBar__init() {
     });
 }
 
+
+
+
 $(function() {
     MobileSideBar__init();
+
 });

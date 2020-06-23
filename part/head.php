@@ -10,9 +10,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/resource/common.js"></script>
+
+  
 </head>
 
 <body>
+
 <div class="top-bar visible-on-md-up">
     <div class="con height-100p flex flex-jc-sb">
       <a href="#" class="logo flex flex-ai-c">
@@ -26,13 +29,13 @@
               
             </li>
           <li><a href="../articles.php" class="height-100p flex flex-ai-c">Articles</a></li>
-          <li><a href="../aboutMe.php" class="height-100p flex flex-ai-c">About Me</a></li>
+          <li><a href="../aboutMe.php" class="height-100p flex flex-ai-c">About_Me</a></li>
           <li>
             <a href="#" class="height-100p flex flex-ai-c">CONTACT</a>
             <ul>
               <li><a class="block" href="https://github.com/hyeryeonkim" target="_blank ">GITHUB</a></li>
               <li><a class="block" href="https://harrydony.tistory.com/" target="_blank">TISTORY</a></li>
-
+              <li><a class="block" href="https://www.youtube.com/playlist?list=PLBMj9dCUe_7NFZQtiv2I8TKQCt_QsvI2T" target="_blank">YOUTUBE</a></li>
             </ul>
           </li>
         </ul>
@@ -55,15 +58,16 @@
 
     <nav class="menu-box-1 flex-grow-1">
       <ul>
-        <li><a href="#" class="block">Home</a></li>
-        <li><a href="#" class="block">Articles</a></li>
-        <li><a href="#" class="block">About Me</a></li>
+        <li><a href="../index.php" class="block">Home</a></li>
+        <li><a href="../articles.php" class="block">Articles</a></li>
+        <li><a href="../aboutMe.php"   class="block">About Me</a></li>
         <li>
           <a href="#" class="block">CONTACT</a>
           <ul>
             <li><a class="block" href="https://github.com/hyeryeonkim" target="_blank">GITHUB</a></li>
             <li><a class="block" href="https://harrydony.tistory.com/" target="_blank">TISTORY</a></li>
-
+            <li><a class="block" href="https://www.youtube.com/playlist?list=PLBMj9dCUe_7NFZQtiv2I8TKQCt_QsvI2T" target="_blank">YOUTUBE</a></li>
+           
           </ul>
         </li>
       </ul>

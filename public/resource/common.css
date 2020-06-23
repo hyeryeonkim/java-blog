@@ -279,7 +279,9 @@ label[for] {
 *>.flex-jc-e {
   justify-content: flex-end;
 }
-
+*> .flex-jc-c {
+  justify-content: center;
+}
 *>.flex-jc-sb {
   justify-content: space-between;
 }
@@ -346,6 +348,9 @@ label[for] {
 }
 
 /* 탑바 시작 */
+h1 {
+  font-size:3rem;
+}
 .top-bar {
   height: 80px;
   background-color: red;
@@ -369,6 +374,8 @@ label[for] {
 .top-bar .menu-box-1>ul>li:hover>a {
   background-color: white;
   color: black;
+  text-decoration:underline;
+  
 }
 
 .top-bar .menu-box-1 ul>li {
@@ -402,6 +409,7 @@ label[for] {
 .top-bar .menu-box-1>ul ul>li:hover>a {
   background-color: black;
   color: white;
+  text-decoration:underline;
 }
 
 /* 탑바 끝 */
@@ -531,7 +539,129 @@ label[for] {
 }
 
 /*index.php(home background)*/
-.index-img > img {
-    width:50%;
-    position:absolute;
+
+/* aboutMe 시작 */
+.profile-box-1 {
+  position:absolute;
+  top:250px;
+  left:20%;
+  padding-right:500px;
 }
+.profile-img-box {
+  width:240px;
+  height:240px;
+  border-radius:30%;
+  overflow:hidden;
+  border:5px solid red;
+  text-align:center;
+  padding-bottom:10px;
+  
+}
+.profile {
+  width:80%;
+  height:100%;
+  object-fit:cover;
+  
+}
+.profile-box-1 > .profile-name {
+  font-size:2rem;
+  text-align:center;
+  font-weight:bold;
+  color:black;
+}
+.profile-text {
+  padding-left:80px;
+  padding-top:10px;
+  padding-right:60px;
+  font-weight:bold;
+}
+.profile-text > p {
+  white-space:nowrap;
+}
+/*about me 끝 */
+
+/* index 시작 */
+.btn-box {
+  text-align:center;
+}
+.index-img > img {
+  margin-top:10px;
+  height:750px;
+  width:100%;
+}
+
+
+
+/* 아이콘 transition 연습 시작*/
+.fab { 
+  transition:all 1s;
+}
+
+.menu-text {
+  margin-left:100px;
+  font-size:3rem;
+}
+
+.fab:hover {
+  font-size:150px;
+  transform:rotate(-45deg);
+  color:black;
+}
+
+.index-icon-box .icon {
+  position:absolute;
+  transition:all 1s;
+  padding:50px;
+}
+.index-icon-box .icon:hover {
+  font-size:300px;
+  transform:rotate(-20deg);
+  color:white;
+}
+.index-icon-box .icon:first-child {
+  left:60%;
+  top:20%;
+}
+
+.index-icon-box .icon:nth-child(2) {
+  left:40%;
+  top:40%;
+}
+
+.index-icon-box .icon:nth-child(3) {
+  left:10%;
+  top:30%;
+}
+/* 아이콘 transition 연습 끝*/
+
+
+/* 하단 바 */
+.foot-bar {
+  position:absolute;
+  height:10px;
+  width:0;
+  bottom:100px;
+  left:0;
+  background: linear-gradient(#262524,#171515);
+  opacity:0;
+  transition: width 8s, opacity 4s;
+  
+}
+.foot-text {
+  position:absolute;
+  left:10%;
+  font-weight:bold;
+}
+.foot-text:nth-child(2) {
+  left:40%;
+}
+.foot-text:nth-child(3) {
+  left:70%;
+}
+
+
+body:hover .foot-bar{ 
+  width: 100%;
+  opacity:1;
+}
+
